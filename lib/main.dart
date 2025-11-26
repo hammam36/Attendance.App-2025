@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:attendance_app/core/theme/app_theme.dart';
-import 'package:attendance_app/ui/home_screen.dart';
+import 'package:attendance_app/ui/splash_screen.dart'; // ADD THIS IMPORT
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,8 +31,7 @@ class AttendanceApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const HomeScreen(),
-      // home: const SplashScreen(),
+      home: const SplashScreen(), // CHANGE THIS to SplashScreen
     );
   }
 }
